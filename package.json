@@ -1,0 +1,15 @@
+{
+  "name": "eclyns",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A dark, visually appealing theme for Atom.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/nysos3/eclyns",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
