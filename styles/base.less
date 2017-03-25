@@ -44,8 +44,9 @@ atom-text-editor.is-focused .cursor {
   border-color: @syntax-cursor-color;
 }
 
-.syntax--character.syntax--escape.syntax--php {
+.syntax--character.syntax--escape {
   color: @syntax-cursor-color;
+  background-color:#000;
   font-style: normal;
 }
 
@@ -67,13 +68,17 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .syntax--constant.syntax--numeric {
   color: #ee5b6c;
+  font-weight:initial;
+  font-style:initial;
 }
 
 .syntax--constant.syntax--language {
   color: #ff8019;
+  font-weight: initial;
+  font-style: normal;
 }
 
-.syntax--constant.syntax--character, .syntax--constant.syntax--other, .syntax--support.syntax--constant {
+.syntax--constant, .syntax--constant.syntax--other, .syntax--support.syntax--constant {
   font-weight: bold;
   font-style: italic;
   color: #446cff;
@@ -103,9 +108,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .syntax--storage {
   color: #ff8019;
 }
-.syntax--punctuation.syntax--terminator.syntax--expression {
+.syntax--punctuation.syntax--terminator {
   color: #AAAAAA;
 }
+.syntax--meta.syntax--brace.syntax--square,
+.syntax--punctuation.syntax--definition.syntax--character-class.syntax--regexp,
 .syntax--punctuation.syntax--section.syntax--array {
   color: #666666;
 }
@@ -113,8 +120,16 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #ff8019;
   font-style:normal;
 }
+.syntax--constant.syntax--other.syntax--character-class.syntax--range.syntax--regexp,
+.syntax--variable.syntax--language {
+  color: #ff8019;
+}
+.syntax--meta.syntax--arguments.syntax--js .syntax--punctuation.syntax--bracket,
+.syntax--meta.syntax--brace.syntax--round,
 .syntax--source.syntax--php,
+.syntax--meta.syntax--brace.syntax--curly.syntax--js,
 .syntax--punctuation.syntax--section.syntax--scope,
+.syntax--meta.syntax--delimiter.syntax--object.syntax--comma,
 .syntax--punctuation.syntax--definition.syntax--parameters {
   color: #999999;
 }
@@ -127,6 +142,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   text-decoration: underline;
 }
 
+.syntax--entity.syntax--name.syntax--type.syntax--object.syntax--js,
 .syntax--entity.syntax--name.syntax--function {
   color: #f4dc6e;
 }
@@ -184,7 +200,11 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .syntax--constant.syntax--character, .syntax--constant.syntax--other, .syntax--support.syntax--constant.syntax--sql {
   font-style:normal;
 }
-
+.syntax--meta.syntax--arguments.syntax--js,
 .syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
+  color:#4aa3ff;
+}
+
+.syntax--source.syntax--js {
   color:#4aa3ff;
 }
